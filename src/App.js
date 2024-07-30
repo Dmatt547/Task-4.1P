@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container } from 'semantic-ui-react';
+import Header from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/Header';
+import FeaturedArticles from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/FeaturedArticles';
+import FeaturedTutorials from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/FeaturedTutorials';
+import Footer from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/Footer';
+import LaregImage from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/LargeImage';
+import Subscribe from 'C:/Users/danie/OneDrive/Documents/UNI/SIT313 - Front End Dev/my-new-app/src/Components/Subscribe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Container>
+    <Header />
+    <LaregImage/>
+    <FeaturedArticles />
+    <FeaturedTutorials />
+    <Subscribe />
+    <Footer />
+  </Container>
+);
 
 export default App;
